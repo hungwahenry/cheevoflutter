@@ -1,0 +1,56 @@
+name: cheevo
+description: A modern random video chat app
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.1
+  cloud_firestore: ^5.6.5
+  firebase_storage: ^12.4.4
+  flutter_webrtc: ^0.12.12+hotfix.1
+  webrtc_interface: ^1.2.1+hotfix.1
+  cupertino_icons: ^1.0.5
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.7
+  uuid: ^4.5.1
+  provider: ^6.0.5
+  intl: ^0.20.2
+  shared_preferences: ^2.2.1
+  permission_handler: ^11.4.0
+  device_info_plus: ^11.3.0
+  cached_network_image: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/noise.png
+    - assets/images/local_placeholder.jpg
+    - assets/images/remote_placeholder.jpg
+    - assets/images/cheevo_logo.png
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-Black.ttf
+          weight: 900
